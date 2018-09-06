@@ -1,0 +1,83 @@
+<h1>Dyslexia Online</h1>
+<h2>Read and highlight the text.</h2>
+
+<h3>The American Civil War</h3>
+
+
+
+<div class="text" id="text">
+<p>Passage: </p>
+<div class="passage">
+
+
+<p>
+The American Civil War was a dark time in the history of our country. The United States was founded on the concept of “freedom.” At least, that was what the Northern states believed from the time the country was founded. The Southern states interpreted things differently. They allowed slavery. That meant allowing people to be owned by others, to work under terrible conditions, to receive little or no pay, and not be free. The people of the Southern states believed that slave owners should have the freedom to do what they wanted, including owning slaves. This eventually led to war.
+</p>
+
+<p>
+The Civil War lasted from 1861 to 1865. It started with the election of Abraham Lincoln as U.S. President. Eleven Southern slave states declared their secession from the U.S. and formed their own nation, which they called <q>The Confederate States of America</q> or <q>The Confederacy.</q> Their President was Jefferson Davis. The remaining twenty- ve states supported the U.S. government. They were called <q>The Union.</q> Abraham Lincoln was the Union’s President.
+</p>
+
+<p>
+The war began when the South  red upon Ft. Sumter. General Ulysses S. Grant led the
+North. General Robert E. Lee led the South. This war separated the people of the country. They fought many battles. In some cases, brothers fought against brothers. Thirty percent
+of all Southern men aged, 18 to 40 years old, were killed. The war ended with the South surrendering, and slavery was outlawed everywhere in the nation. The document of surrender was signed at the Appomattox Court House in Virginia on April 9, 1865. The Civil War was considered the  rst industrial war because of the use of the railway, telegraph, steamships, and mass-produced weapons. In reality, however, it was a war of states’ rights and a war of freedom.	
+</p>
+
+
+</div>
+</div>
+
+
+
+
+
+<button onclick="showOutline()">Show Outline</button>
+
+<div id="placeHolder"></div>
+
+<form id="Outline" name="Outline" action="userInfo.php" method="post" >
+
+  Main Point: <textarea type="text" name="mainIdea" rows="4" cols="50"></textarea><br />
+  Detail: <textarea type="text" name="detail1" rows="4" cols="50"></textarea><br />
+  Detail: <textarea type="text" name="detail2" rows="4" cols="50"></textarea><br />
+  Detail: <textarea type="text" name="detail3" rows="4" cols="50"></textarea><br />
+  <button id="submit" onclick="showSummary()">Submit Outline</button>
+
+</form>
+
+<div id="results"></div>
+<p id="submitted"></p>
+
+
+<form id="Summary" name="Summary" action="userInfo.php" method="post" >
+  Summary: <textarea type="text" name="Summary" rows="4" cols="50"></textarea><br />
+  <button id="submit" onclick="">Submit Summary</button>
+  
+</form>
+
+
+<script>
+
+document.getElementById("Outline").style.display = "none";
+
+document.getElementById("Summary").style.display = "none";
+
+function showOutline() {
+  document.getElementById("Outline").style.display = "block";
+}
+
+function showSummary() {
+  document.getElementById("Summary").style.display = "block";
+}
+
+</script>
+
+
+<link rel="stylesheet" href="ReadHighlight.css">
+<link rel="stylesheet" href="highlight2.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="highlight2.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="ReadHightlight.js"></script>
